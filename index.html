@@ -24,13 +24,21 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <label for="email">Email address<Address></Address></label>
-        <input type="email" name="email" id="email" placeholder="email@company.com"><br>
-        <button href="#" type="button">Subscribe to monthly newsletter</button>
+        <label for="emailId">Email address</label> <label class="valid-email-label" for="emailId">Valid email required</label>
+        <input type="text" name="email" id="emailId" class="emailBorder" placeholder="email@company.com"><br>
+        <button id="main-btn" type="button" class="btn-main">Subscribe to monthly newsletter</button>
       </section>
       <section>
         <img src="/assets/images/illustration-sign-up-desktop.svg">
       </section>
+    </article>
+    <article class="thanks-article">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <strong>"Example@gmail.com"</strong>. Please open it and click the button inside to confirm your subscription</p>
+        
+        <button id="dis-btn" type="button" class="btn-main">Dismiss message</button>
+      
     </article>
     
   </main>
@@ -41,6 +49,7 @@
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 
 </html>
