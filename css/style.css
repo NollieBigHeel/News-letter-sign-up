@@ -75,7 +75,7 @@ article {
     /* padding-bottom: 10px;
     padding-left: 10px;
     list-style-image: url(/assets/images/icon-list.svg); */
-    background: url('./assets/images/icon-list.svg') no-repeat left center;
+    background: url('../assets/images/icon-list.svg') no-repeat left center;
     padding: 5px 10px 3px 25px;
     list-style: none;
     margin: 0;
