@@ -13,12 +13,15 @@ disBtn.addEventListener('click', dismissMessage);
 
 function validate() {
     const emailValue = document.querySelector("#emailId").value;
+    const thanksEmail = document.querySelector(".email-value");
     
     const regx = /^([a-zA-Z0-9\.-]+)@([a-z0-9]+).([a-z]{2,8})(.[a-z]{2,10})$/;
 
    
     console.log(emailValue);
     if(regx.test(emailValue)) {
+        // Display email on thank you page
+        thanksEmail.innerText = emailValue;
         return emailAccepted();
     } else {
         return emailErrorState();
@@ -42,4 +45,5 @@ function emailAccepted() {
     console.log("This is the emailAccepted Function");
     enterEmailS.style.display = "none";
     thanksSec.style.display = "block";
+    document.getElementsById("body").style.overflowY = "hidden";
 }

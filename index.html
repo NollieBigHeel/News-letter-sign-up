@@ -11,10 +11,13 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 
-<body>
+<body id="body">
 
   <main>
     <article class="enter-email-article">
+      <section class="mobile-img">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </section>
       <section class="left-section">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -28,14 +31,15 @@
         <input type="text" name="email" id="emailId" class="emailBorder" placeholder="email@company.com"><br>
         <button id="main-btn" type="button" class="btn-main">Subscribe to monthly newsletter</button>
       </section>
-      <section>
+      <section class="dt-image">
         <img src="./assets/images/illustration-sign-up-desktop.svg">
       </section>
     </article>
     <article class="thanks-article">
+        
         <img src="./assets/images/icon-success.svg" alt="">
         <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to <strong>"Example@gmail.com"</strong>. Please open it and click the button inside to confirm your subscription</p>
+        <p>A confirmation email has been sent to <strong class="email-value">"Example@gmail.com"</strong>. Please open it and click the button inside to confirm your subscription</p>
         
         <button id="dis-btn" type="button" class="btn-main">Dismiss message</button>
       
